@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集</title>
+    <style>
+        /* 通用样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* 导航栏样式 */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* 内容部分样式 */
+        .content {
+            padding: 100px 20px; /* 给导航栏留出空间 */
+        }
+
+        section {
+            margin: 2rem 0;
+            padding: 1rem;
+        }
+
+        /* 每个 section 的样式 */
+        section h2 {
+            margin-bottom: 1rem;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#work">我的作品</a></li>
+            <li><a href="#contact">联系我</a></li>
+        </ul>
+    </nav>
+
+    <!-- 内容部分 -->
+    <div class="content">
+        <section id="about">
+            <h2>关于我</h2>
+            <p>这里是关于你的介绍，可以写上你的经历、技能和设计理念。</p>
+        </section>
+
+        <section id="work">
+            <h2>我的作品</h2>
+            <p>在这个部分展示你的设计作品。你可以嵌入图片或链接到你的作品集展示页。</p>
+        </section>
+
+        <section id="contact">
+            <h2>联系我</h2>
+            <p>这里可以放上你的联系方式，比如邮箱、社交媒体链接等。</p>
+        </section>
+    </div>
+
+</body>
+</html>
